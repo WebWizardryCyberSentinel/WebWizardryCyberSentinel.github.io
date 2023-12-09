@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+body .container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body .container .header{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+}
+
+body .container .reading_pane{
+    position: relative;
+    flex-grow: 1;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+}
+
+body .container .reading_pane .portfolio .portfolio_table table.portfolio_table tbody tr:nth-child(odd){
+    color:#ffffff33;
+}
+
+body .container .reading_pane .portfolio .portfolio_table table.portfolio_table{
+    table-layout: fixed;
+    border: 0px;
+    width: 100%;
+    min-width:800px;
+    margin: 0;
+}
+
+body .container .reading_pane .portfolio .portfolio_table table.portfolio.table thead{
+    font-size: 2.5rem;
+}
+body .container .reading_pane .portfolio .portfolio_table table.portfolio_table td{
+    padding: 0.5rem 5px;
+    word-break: break-word;
+}
+
+body .container .reading_pane .portfolio_table table.portfolio_table tr{
+    font-size: 0.9rem;
+    max-width: 10vw;
+}
+
+body .container .footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1rem;
+    font-size: 0.8rem;
+    text-align:center;
+}
