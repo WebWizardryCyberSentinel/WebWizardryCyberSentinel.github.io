@@ -6,65 +6,63 @@ body{
     overflow-x: hidden;
 }
 
-body .container{
+body .grid_wrapper{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
 }
 
-body .container .header{
+body .grid_wrapper.header{
     position: relative;
+    display:    flex;
     bottom: 0;
     left: 0;
     width: 100vw;
     padding: 1rem;
     text-align: center;
+    justify-content: center;
 }
 
-body .container .reading_pane{
+
+body .grid_wrapper.menubar{
     position: relative;
-    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    display:    flex;
+    justify-content: center;
+
+}
+
+body .grid_wrapper.reading_pane{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content:    center;
+    /*flex-grow: 1;
     bottom: 0;
     left: 0;
     width: 100vw;
-    padding: 1rem;
+    padding: 1rem;*/
+}
+
+body .grid_wrapper.lorum_poem{
+    display: inline-flex;
+    justify-content:    center;
     text-align: center;
 }
 
-body .container .reading_pane .portfolio .portfolio_table table.portfolio_table tbody tr:nth-child(odd){
-    color:#ffffff33;
-}
-
-body .container .reading_pane .portfolio .portfolio_table table.portfolio_table{
-    table-layout: fixed;
-    border: 0px;
-    width: 100%;
-    min-width:800px;
-    margin: 0;
-}
-
-body .container .reading_pane .portfolio .portfolio_table table.portfolio.table thead{
-    font-size: 2.5rem;
-}
-body .container .reading_pane .portfolio .portfolio_table table.portfolio_table td{
-    padding: 0.5rem 5px;
-    word-break: break-word;
-}
-
-body .container .reading_pane .portfolio_table table.portfolio_table tr{
-    font-size: 0.9rem;
-    max-width: 10vw;
-}
-
-body .container .footer{
-    position: relative;
+body .grid_wrapper.footer{
+    position: fixed;
+    display:    flex;
     bottom: 0;
     left: 0;
     width: 100vw;
     padding: 1rem;
     font-size: 0.8rem;
     text-align:center;
+    justify-content: center;
 }
