@@ -1,4 +1,4 @@
-import timeline from './animejs/lib/anime';
+import anime from '../scripts/animejs/lib/anime.es';
 
 document.addEventListener("DOMContentLoaded", function()  {
 
