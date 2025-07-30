@@ -1,4 +1,4 @@
-import anime from './animejs/lib/anime.es.js';
+import anime from './animejs/lib/anime.js';
 
 document.addEventListener("DOMContentLoaded", function()  {
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function()  {
 
 //generating elements for the capacitor
 const timeline = document.querySelector(".timeline");
-events.Foreach(event => {
+events.foreach(event => {
   const eventElement = document.createElement("div");
   eventElement.classList.add("timeline-event");
   eventElement.innerHTML = `<strong> ${events.date}</strong><p>${events.story}</p>`;
