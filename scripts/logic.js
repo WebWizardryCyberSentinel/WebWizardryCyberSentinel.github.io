@@ -1,4 +1,4 @@
-import anime from '../scripts/animejs/lib/anime.es';
+import { default as anime } from '../scripts/animejs/lib/anime.es';
 
 document.addEventListener("DOMContentLoaded", function()  {
 
